@@ -7,12 +7,12 @@ This bot was created to make it easier to share connection to the Raspicast devi
 
 - Added omxd (omxplayer Daemon) support. Now when you send link to bot, it will be added to the end of the playlist.
 - Added Yandex.Music support (I used https://github.com/MarshalX/yandex-music-api as API). You can send link to one track or playlist and top 20 tracks (can be changed) will be played.
-- Also now you can play russian [Adult Swim] analogue 2x2 channel in live
+- Also now you can play russian [Adult Swim] analogue -- 2x2 channel in live
 - Using /playlist you can see playing queue ([PLAY] shows item that's playing right now) and using /play [id] start any video from queue right now
-- Using /yandex [username:password] command you can log into you Yandex account, but for now it's useles, only if you have private account then this is only way you can play your tracks from bot. 
+- Using /yandex [username:password] command you can log into you Yandex account, if you have private account then this is only way you can play your tracks from bot. 
 TODO: soon I will add feature to save play history in Yandex.Music account.
 - Added new buttons in Control - next and previous to control playlist.
-- Changed 'fast forward' button behaviour now it will skip 10mins of video.
+- Changed 'fast forward' button behaviour, now it will skip 10mins of video.
 - Added ability to play Live Streams from youtube - in original RaspicastBot you wasn't able to do that.
 
 ## Requirements
