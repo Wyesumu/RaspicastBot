@@ -3,10 +3,28 @@
 Telegram bot that controls your Raspicast device.
 This bot was created to make it easier to share connection to the Raspicast device without sharing ssh credentials.
 
+# What's new?
+
+- Added omxd (omxplayer Daemon) support. Now when you send link to bot, it will be added to the end of the playlist.
+- Added Yandex.Music support (I used https://github.com/MarshalX/yandex-music-api as API). You can send link to one track or playlist and top 20 tracks (can be changed) will be played.
+- Also now you can play russian [Adult Swim] analogue 2x2 channel in live
+- Using /playlist you can see playing queue ([PLAY] shows item that's playing right now) and using /play [id] start any video from queue right now
+- Using /yandex [username:password] command you can log into you Yandex account, but for now it's useles, only if you have private account then this is only way you can play your tracks from bot. 
+TODO: soon I will add feature to save tracks that was played in Yandex.Music history.
+- Added new buttons in Control - next and previous to control playlist.
+- Changed 'fast forward' button behaviour now it will skip 10mins of video.
+- Added ability to play Live Streams from youtube - in original RaspicastBot you wasn't able to do that.
+
 ## Requirements
 
 Before starting this bot on your device, you should configure raspberry Pi as a Chromecast device.  
 You can follow the guide here: https://pimylifeup.com/raspberry-pi-chromecast
+
+Also **you have to install omxd**, here's guide: https://github.com/subogero/omxd/blob/master/INSTALL
+Then you need to start it by typing ``` omxd ``` in command line. The daemon will be started.
+You can add it to crontab ``` crontab -e ``` -> ``` @reboot omxd ```
+
+By default omxd uses hdmi as audio input, if you're not then also add to crontab ``` @reboot echo j > /var/run/omxctl ```
 
 *OPTIONAL*  
 You can also configure it as a Spotify Connect client.  
