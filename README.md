@@ -10,7 +10,7 @@ This bot was created to make it easier to share connection to the Raspicast devi
 - Also now you can play russian [Adult Swim] analogue 2x2 channel in live
 - Using /playlist you can see playing queue ([PLAY] shows item that's playing right now) and using /play [id] start any video from queue right now
 - Using /yandex [username:password] command you can log into you Yandex account, but for now it's useles, only if you have private account then this is only way you can play your tracks from bot. 
-TODO: soon I will add feature to save tracks that was played in Yandex.Music history.
+TODO: soon I will add feature to save play history in Yandex.Music account.
 - Added new buttons in Control - next and previous to control playlist.
 - Changed 'fast forward' button behaviour now it will skip 10mins of video.
 - Added ability to play Live Streams from youtube - in original RaspicastBot you wasn't able to do that.
@@ -39,6 +39,7 @@ Above is an example of the bot response when someone is sending a link to play.
 ## Proxy
 
 If Telegram **isn't banned in your country** then you need to delete/comment out 52nd line from bot. This is proxy.
+
 Also if you want to use proxy and you see ``` requests.exceptions.ReadTimeout: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=70) ``` in raspicast.log then public proxy that I used might be dead then you should use another proxy.
 
 -------
