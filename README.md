@@ -3,6 +3,8 @@
 Telegram bot that controls your Raspicast device.
 This bot was created to make it easier to share connection to the Raspicast device without sharing ssh credentials.
 
+if you have any **bug report or suggestion what to do** then please **create issue** 
+
 # What's new?
 
 - Added omxd (omxplayer Daemon) support. Now when you send link to bot, it will be added to the end of the playlist.
