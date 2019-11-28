@@ -40,7 +40,7 @@ Above is an example of the bot response when someone is sending a link to play.
 
 If Telegram **isn't banned in your country** then you need to delete/comment out 52nd line from bot. This is proxy.
 
-Also if you want to use proxy and you see ``` requests.exceptions.ReadTimeout: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=70) ``` in raspicast.log then public proxy that I used might be dead then you should use another proxy.
+Also if you want to use proxy and you see ``` requests.exceptions.ReadTimeout: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=70) ``` in raspicast.log then public proxy that I used might be dead and you should use another proxy.
 
 -------
 
